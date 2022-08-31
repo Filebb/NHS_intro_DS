@@ -338,7 +338,7 @@ Categorical variables
 :::: {.columns}
 
 ::: {.column width="80%"}
-Tidyverse provides two packages to work with dates and time:
+Tidyverse provides two packages to work with date and times:
 
 + [lubridate](https://lubridate.tidyverse.org/)
 + [hms](https://hms.tidyverse.org/)
