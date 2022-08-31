@@ -118,6 +118,14 @@ will change the name of RStudio IDE to Posit.
 [https://www.rstudio.com/](https://www.rstudio.com/)
 :::
 
+## RStudio Cloud
+
+![](Img\rstudio-cloud.jpg)
+
+::: aside
+[https://rstudio.cloud/](https://rstudio.cloud/)
+:::
+
 ## Data Science Workflow
 
 ![](Img\data-science-workflow.png){fig-align="center"}
