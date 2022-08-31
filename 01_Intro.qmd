@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the Tidyverse"
+title: "Introduction to Tidyverse"
 subtitle: "Fundamentals of Data Science for NHS using R"
 execute: 
   echo: true
