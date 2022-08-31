@@ -19,6 +19,8 @@ code-line-numbers: false
 + What is the Tidyverse?
 + Practical Session
 
+# Let's introduce the main charcaters of our story
+
 ## What is R?
 
 :::: {.columns}
@@ -189,7 +191,7 @@ meet R for the first time:
 :::: {.columns}
 
 ::: {.column width="60%"}
-Data visualisation.
+Data visualisation
 :::
 
 ::: {.column width="40%"}
@@ -207,7 +209,7 @@ Data visualisation.
 :::: {.columns}
 
 ::: {.column width="60%"}
-Data manipulation.
+Data manipulation
 :::
 
 ::: {.column width="40%"}
@@ -225,7 +227,7 @@ Data manipulation.
 :::: {.columns}
 
 ::: {.column width="60%"}
-Data tidying.
+Data tidying
 :::
 
 ::: {.column width="40%"}
@@ -243,7 +245,7 @@ Data tidying.
 :::: {.columns}
 
 ::: {.column width="60%"}
-Data import (CSV and TSV files).
+Data import (CSV and TSV files)
 :::
 
 ::: {.column width="40%"}
@@ -261,7 +263,7 @@ Data import (CSV and TSV files).
 :::: {.columns}
 
 ::: {.column width="60%"}
-Functional programming.
+Functional programming
 :::
 
 ::: {.column width="40%"}
@@ -279,7 +281,7 @@ Functional programming.
 :::: {.columns}
 
 ::: {.column width="60%"}
-For the `tibble` data structure.
+`tibble` data structure
 :::
 
 ::: {.column width="40%"}
@@ -297,7 +299,7 @@ For the `tibble` data structure.
 :::: {.columns}
 
 ::: {.column width="60%"}
-For strings.
+Strings manipulation
 :::
 
 ::: {.column width="40%"}
@@ -316,7 +318,7 @@ For strings.
 :::: {.columns}
 
 ::: {.column width="60%"}
-For categorical variables.
+Categorical variables
 :::
 
 ::: {.column width="40%"}
@@ -409,12 +411,12 @@ Ask for help in way that everybody can understand.
 :::: {.columns}
 
 ::: {.column width="60%"}
-Essential to write cleaner code by using the `%>%` operator.
+Provides the `%>%` operator which is essential to write cleaner code.
 
-From R 4.1.0 the pipe operator has been implemented in the base-R
-language and his syntax is `|>`.
+From R 4.1.0 (May 2021) the pipe operator has been implemented in the base-R
+language and its syntax is `|>`.
 
-See [Pipes](https://r4ds.hadley.nz/workflow-pipes.html#vs) for differences.
+See [this link](https://r4ds.hadley.nz/workflow-pipes.html#vs) for differences.
 :::
 
 ::: {.column width="40%"}
