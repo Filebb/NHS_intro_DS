@@ -7,7 +7,7 @@ format:
     revealjs:
         theme: default
         slide-number: c/t
-        footer: "Fundamentals of Data Science for NHS using R - Day 1"
+        footer: "[Fundamentals of Data Science for NHS using R](https://github.com/Filebb/NHS_intro_DS) - Day 1"
 highlight-style: vim-dark
 code-line-numbers: false
 ---
