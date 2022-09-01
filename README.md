@@ -22,8 +22,11 @@ encoding, exploration and visualisation.
 
 ## Learning outcomes
 
-+ To understand basic concepts of data science and how to implement them in R using the Tidyverse.
-+ To learn how to extract and communicate insights retrieved through data analysis.
++ To understand basic concepts of data science and how to implement them in R
+using the Tidyverse.
+
++ To learn how to extract and communicate insights retrieved through data
+analysis.
 
 ## Detailed Programme
 
