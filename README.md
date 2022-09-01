@@ -30,7 +30,7 @@ analysis.
 
 ## Detailed Programme
 
-### Day 1: Introduction to the Tidyverse
+### Day 1: Introduction to Tidyverse
 
 Introduction to R and RStudio. Workflow. Tidy data. The Tidyverse ecosystem. Data import.
 Tibbles. Dplyr basics. Pipes.
