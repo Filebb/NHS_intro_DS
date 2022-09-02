@@ -860,6 +860,43 @@
 <h1>Workshop Part 2: Introduction to dplyr</h1>
 
 </section>
+<section id="palmer-penguins" class="slide level2">
+<h2>Palmer Penguins</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>The goal of palmerpenguins is to provide a great dataset for data exploration and visualization.</p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Img\palmerpenguins.png"></p>
+</figure>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p>Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. <a href="https://allisonhorst.github.io/palmerpenguins/">https://allisonhorst.github.io/palmerpenguins/</a> doi: 10.5281/zenodo.3960218.</p>
+</div></aside></section>
+<section id="palmer-penguins-1" class="slide level2">
+<h2>Palmer Penguins</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Img\penguins_species.png"></p>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Img\culmen.png"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside><div>
+<p>Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></p>
+</div></aside></section>
 <section id="what-is-dplyr" class="slide level2">
 <h2>What is dplyr</h2>
 <p><code>dplyr</code> is a package that contains functions for data manipulation.</p>
@@ -904,16 +941,16 @@
 </div>
 <p>Another useful function is <code>glimpse()</code></p>
 </section>
-<section id="select" class="slide level2">
-<h2><code>select</code></h2>
+<section id="select-specific-variables" class="slide level2">
+<h2><code>select</code> specific variables</h2>
 <p>We can select specific variables. List their names as arguments of the <code>select</code> function.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(var1_name, var2_name, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="select-1" class="slide level2">
-<h2><code>select</code></h2>
+<section id="select-drop-variables" class="slide level2">
+<h2><code>select</code> drop variables</h2>
 <p>We can select all variables but specific ones. List their names with a minus sign before the name of each variable you want to exclude.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> </span>
@@ -946,6 +983,12 @@
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="fu">where</span>(is.character))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="slice-subset-data-by-row-number" class="slide level2">
+<h2><code>slice</code> subset data by row number</h2>
+</section>
+<section id="slice_head-and-slice_tail" class="slide level2">
+<h2><code>slice_head</code> and <code>slice_tail</code></h2>
 </section>
 <section id="a-verb-from-tidyr" class="slide level2 smaller">
 <h2>A verb from tidyr</h2>
