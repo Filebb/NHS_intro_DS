@@ -16,6 +16,69 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="01_Intro_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="01_Intro_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -782,6 +845,166 @@
 <li><p><a href="https://r-graphics.org/">R Graphics Cookbook</a> by Winston Chang</p></li>
 <li><p><a href="https://style.tidyverse.org/">The Tidyverse Style Guide</a> by Hadley Wickham</p></li>
 </ul>
+</section></section>
+<section id="workshop-part-1-r-and-rstudio-basics" class="title-slide slide level1 center">
+<h1>Workshop Part 1: R and RStudio basics</h1>
+<ul>
+<li>writing comments</li>
+<li>install/load packages</li>
+<li>run a line</li>
+</ul>
+</section>
+
+<section>
+<section id="workshop-part-2-introduction-to-dplyr" class="title-slide slide level1 center">
+<h1>Workshop Part 2: Introduction to dplyr</h1>
+
+</section>
+<section id="what-is-dplyr" class="slide level2">
+<h2>What is dplyr</h2>
+<p><code>dplyr</code> is a package that contains functions for data manipulation.</p>
+<p>It is automatically loaded when we call <code>library(tidyverse)</code> as it’s one of the core packages.</p>
+</section>
+<section id="dplyr-cheat-sheet" class="slide level2">
+<h2>dplyr cheat sheet</h2>
+
+<aside><div>
+<p><a href="https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf">dplyr cheat sheet</a></p>
+</div></aside></section>
+<section id="single-table-verbs-for-today" class="slide level2 smaller">
+<h2>Single table verbs (for today…)</h2>
+<ul>
+<li>Column verbs
+<ul>
+<li><code>select()</code> subset by column</li>
+</ul></li>
+<li>Row verbs
+<ul>
+<li><code>slice()</code> (and its frineds) subset rows by position</li>
+<li><code>arrange()</code> order rows by column values</li>
+<li><code>distinct()</code> select unique rows</li>
+<li><code>filter()</code> subset rows by column values</li>
+</ul></li>
+<li>Group verbs
+<ul>
+<li><code>count()</code> count observation by group</li>
+</ul></li>
+</ul>
+</section>
+<section id="inspect-the-data" class="slide level2">
+<h2>Inspect the Data</h2>
+<p>We can output in the console the first lines of a dataset by using its name</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dataset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can see the whole dataset using <code>view()</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">view</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Another useful function is <code>glimpse()</code></p>
+</section>
+<section id="select" class="slide level2">
+<h2><code>select</code></h2>
+<p>We can select specific variables. List their names as arguments of the <code>select</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(var1_name, var2_name, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="select-1" class="slide level2">
+<h2><code>select</code></h2>
+<p>We can select all variables but specific ones. List their names with a minus sign before the name of each variable you want to exclude.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>var1_name, <span class="sc">-</span>var2_name, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="select-by-matching-strings" class="slide level2">
+<h2><code>select</code> by matching strings</h2>
+<p>We can use helpers to match strings in the variable name.</p>
+<p><code>starts_with()</code></p>
+<p><code>ends_with()</code></p>
+<p><code>contains()</code></p>
+<p>For example</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">"string_to_be_matched"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Multiple conditions can be combined using the logical operators <strong>and</strong> (<code>&amp;</code>), <strong>or</strong> (<code>|</code>). We can also use the <strong>negation</strong> (<code>!</code>) operator.</p>
+</section>
+<section id="select-by-variable-type" class="slide level2">
+<h2><code>select</code> by variable type</h2>
+<p>We can use <code>where()</code> to specify variable type(s) to be selected. Possible arguments are</p>
+<p><code>is.integer</code> for integer</p>
+<p><code>is.double</code> for decimal</p>
+<p><code>is.numerical</code> for numerical (both integer and decimal)</p>
+<p><code>is.factor</code> for categorical</p>
+<p><code>is.character</code> for strings</p>
+<p>For example</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="fu">where</span>(is.character))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="a-verb-from-tidyr" class="slide level2 smaller">
+<h2>A verb from tidyr</h2>
+<ul>
+<li>Missing values
+<ul>
+<li><code>drop_na()</code> drop rows containing missing values</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">drop_na</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 333 × 8
+   species island    bill_length_mm bill_depth_mm flipper_…¹ body_…² sex    year
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;      &lt;int&gt;   &lt;int&gt; &lt;fct&gt; &lt;int&gt;
+ 1 Adelie  Torgersen           39.1          18.7        181    3750 male   2007
+ 2 Adelie  Torgersen           39.5          17.4        186    3800 fema…  2007
+ 3 Adelie  Torgersen           40.3          18          195    3250 fema…  2007
+ 4 Adelie  Torgersen           36.7          19.3        193    3450 fema…  2007
+ 5 Adelie  Torgersen           39.3          20.6        190    3650 male   2007
+ 6 Adelie  Torgersen           38.9          17.8        181    3625 fema…  2007
+ 7 Adelie  Torgersen           39.2          19.6        195    4675 male   2007
+ 8 Adelie  Torgersen           41.1          17.6        182    3200 fema…  2007
+ 9 Adelie  Torgersen           38.6          21.2        191    3800 male   2007
+10 Adelie  Torgersen           34.6          21.1        198    4400 male   2007
+# … with 323 more rows, and abbreviated variable names ¹​flipper_length_mm,
+#   ²​body_mass_g</code></pre>
+</div>
+</div>
+
+<aside><div>
+<p><code>tidyr</code> contains many functions to make datasets tide. You may find useful to see <a href="https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf">tidyr cheat sheet</a></p>
+</div></aside></section>
+<section id="in-the-next-episode" class="slide level2 smaller">
+<h2>In the next episode</h2>
+<ul>
+<li>Column verbs
+<ul>
+<li><code>mutate()</code> and <code>transmute()</code> create, modify, and delete columns</li>
+</ul></li>
+<li>Group verbs
+<ul>
+<li><code>group_by()</code> group rows</li>
+<li><code>summarise()</code> collapse row groups into a single row</li>
+</ul></li>
+</ul>
+</section>
+<section id="honorable-mentions" class="slide level2 smaller">
+<h2>Honorable mentions</h2>
+<ul>
+<li>Column verbs
+<ul>
+<li><code>relocate()</code> change column order</li>
+<li><code>rename()</code> change column name</li>
+</ul></li>
+</ul>
 <div class="footer footer-default">
 <p><a href="https://github.com/Filebb/NHS_intro_DS">Fundamentals of Data Science for NHS using R</a> - Day 1</p>
 </div>
@@ -997,6 +1220,48 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
