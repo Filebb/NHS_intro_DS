@@ -391,13 +391,13 @@
 <ul>
 <li>What is R?</li>
 <li>What is RStudio?</li>
-<li>What is the Tidyverse?</li>
+<li>What is Tidyverse?</li>
 <li>Practical Session</li>
 </ul>
 </section>
 <section>
 <section id="lets-introduce-the-main-characters-of-our-story" class="title-slide slide level1 center">
-<h1>Let’s introduce the main characters of our story</h1>
+<h1>Let’s introduce the main characters of our story!</h1>
 
 </section>
 <section id="what-is-r" class="slide level2">
@@ -892,9 +892,9 @@
 <p>Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></p>
 </div></aside></section>
 <section id="what-is-dplyr" class="slide level2">
-<h2>What is dplyr</h2>
+<h2>What is dplyr?</h2>
 <p><code>dplyr</code> is a package that contains functions for data manipulation.</p>
-<p>It is automatically loaded when we call <code>library(tidyverse)</code> as it’s one of the core packages.</p>
+<p>It is automatically loaded when we call <code>library(tidyverse)</code> as it is one of the core packages.</p>
 </section>
 <section id="dplyr-cheat-sheet" class="slide level2">
 <h2>dplyr cheat sheet</h2>
@@ -903,7 +903,7 @@
 <img data-src="Img\dplyr_cheatsheet.png" class="r-stretch"><aside><div>
 <p><a href="https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf">dplyr cheat sheet</a></p>
 </div></aside></section>
-<section id="single-table-verbs-for-today" class="slide level2 smaller">
+<section id="single-table-verbs-for-today" class="slide level2">
 <h2>Single table verbs (for today…)</h2>
 <ul>
 <li>Column verbs
@@ -1024,10 +1024,30 @@
 <aside><div>
 <p>See <a href="https://dplyr.tidyverse.org/reference/slice.html">subset rows using their position</a></p>
 </div></aside></section>
-<section id="arrange" class="slide level2">
-<h2><code>arrange</code></h2>
+<section id="arrange-rows-by-column-values" class="slide level2">
+<h2><code>arrange</code> rows by column values</h2>
+<p>We can order rows by values of selected columns. List their names as arguments of the <code>arrange</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(var1_name, var2_name, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Use <code>desc()</code> to sort a variable in descending order.</p>
 </section>
-<section id="a-verb-from-tidyr" class="slide level2 smaller">
+<section id="distinct-rows-by-column-values" class="slide level2">
+<h2><code>distinct</code> rows by column values</h2>
+<p>We can select unique/distinct rows.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">distinct</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Observe that</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">select</span>(var1_name, var2_name, ...) <span class="sc">%&gt;%</span> <span class="fu">distinct</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>is equivalent to</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">distinct</span>(var1_name, var2_name, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="a-verb-from-tidyr" class="slide level2">
 <h2>A verb from tidyr</h2>
 <ul>
 <li>Missing values
@@ -1036,49 +1056,31 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">drop_na</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 333 × 8
-   species island    bill_length_mm bill_depth_mm flipper_…¹ body_…² sex    year
-   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;      &lt;int&gt;   &lt;int&gt; &lt;fct&gt; &lt;int&gt;
- 1 Adelie  Torgersen           39.1          18.7        181    3750 male   2007
- 2 Adelie  Torgersen           39.5          17.4        186    3800 fema…  2007
- 3 Adelie  Torgersen           40.3          18          195    3250 fema…  2007
- 4 Adelie  Torgersen           36.7          19.3        193    3450 fema…  2007
- 5 Adelie  Torgersen           39.3          20.6        190    3650 male   2007
- 6 Adelie  Torgersen           38.9          17.8        181    3625 fema…  2007
- 7 Adelie  Torgersen           39.2          19.6        195    4675 male   2007
- 8 Adelie  Torgersen           41.1          17.6        182    3200 fema…  2007
- 9 Adelie  Torgersen           38.6          21.2        191    3800 male   2007
-10 Adelie  Torgersen           34.6          21.1        198    4400 male   2007
-# … with 323 more rows, and abbreviated variable names ¹​flipper_length_mm,
-#   ²​body_mass_g</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 <aside><div>
 <p><code>tidyr</code> contains many functions to make datasets tide. You may find useful to see <a href="https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf">tidyr cheat sheet</a></p>
 </div></aside></section>
-<section id="in-the-next-episode" class="slide level2 smaller">
+<section id="in-the-next-episode" class="slide level2">
 <h2>In the next episode</h2>
 <ul>
 <li>Column verbs
 <ul>
 <li><code>mutate()</code> and <code>transmute()</code> create, modify, and delete columns</li>
 </ul></li>
-<li>Group verbs
+<li>Row verbs
 <ul>
 <li><code>filter()</code> subset rows by column values</li>
+</ul></li>
+<li>Group verbs
+<ul>
 <li><code>group_by()</code> group rows</li>
 <li><code>summarise()</code> collapse row groups into a single row</li>
 </ul></li>
 </ul>
 </section>
-<section id="honorable-mentions" class="slide level2 smaller">
+<section id="honorable-mentions" class="slide level2 hidden">
 <h2>Honorable mentions</h2>
 <ul>
 <li>Column verbs
