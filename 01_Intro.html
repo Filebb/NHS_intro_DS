@@ -830,12 +830,12 @@
 <li><p><a href="https://stat545.com/">STAT 545</a> by Jenny Bryan and The STAT 545 TAs</p></li>
 <li><p><a href="https://style.tidyverse.org/">The Tidyverse Style Guide</a> by Hadley Wickham</p></li>
 <li><p><a href="https://rafalab.github.io/dsbook/">Introduction to Data Science</a> by Rafael A. Irizarry</p></li>
-<li><p><a href="https://r-graphics.org/">R Graphics Cookbook</a> by Winston Chang</p></li>
 </ul>
 
 <aside><div>
-<p>A great reference for the the base R language is <a href="https://rstudio.github.io/r-manuals/r-intro/">An Introduction to R</a>.</p>
+<p>A great reference to R base language is <a href="https://rstudio.github.io/r-manuals/r-intro/">An Introduction to R</a>.</p>
 </div></aside></section></section>
+<section>
 <section id="workshop-part-1-r-and-rstudio-basics" class="title-slide slide level1 center">
 <h1>Workshop Part 1: R and RStudio basics</h1>
 <ul>
@@ -844,7 +844,14 @@
 <li>run a line</li>
 </ul>
 </section>
-
+<section id="keyboard-shortcuts" class="slide level2">
+<h2>Keyboard Shortcuts</h2>
+<p>To see the most common shortcuts using</p>
+<ul>
+<li><p><code>Alt+Shift+K</code> on Windows</p></li>
+<li><p><code>Option+Shift+K</code> on Mac</p></li>
+</ul>
+</section></section>
 <section>
 <section id="workshop-part-2-introduction-to-dplyr" class="title-slide slide level1 center">
 <h1>Workshop Part 2: Introduction to dplyr</h1>
@@ -908,7 +915,6 @@
 <li><code>slice()</code> (and its friends) subset rows by position</li>
 <li><code>arrange()</code> order rows by column values</li>
 <li><code>distinct()</code> select unique rows</li>
-<li><code>filter()</code> subset rows by column values</li>
 </ul></li>
 <li>Group verbs
 <ul>
@@ -1018,6 +1024,9 @@
 <aside><div>
 <p>See <a href="https://dplyr.tidyverse.org/reference/slice.html">subset rows using their position</a></p>
 </div></aside></section>
+<section id="arrange" class="slide level2">
+<h2><code>arrange</code></h2>
+</section>
 <section id="a-verb-from-tidyr" class="slide level2 smaller">
 <h2>A verb from tidyr</h2>
 <ul>
@@ -1063,6 +1072,7 @@
 </ul></li>
 <li>Group verbs
 <ul>
+<li><code>filter()</code> subset rows by column values</li>
 <li><code>group_by()</code> group rows</li>
 <li><code>summarise()</code> collapse row groups into a single row</li>
 </ul></li>
