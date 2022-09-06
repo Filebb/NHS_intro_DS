@@ -3,7 +3,7 @@
 ## Slides
 
 | Day | Slides                                                                               |
-|----:|:-------------------------------------------------------------------------------------|
+|:---:|:-------------------------------------------------------------------------------------|
 |   1 | [Introduction to Tidyverse](https://filebb.github.io/NHS_intro_DS/01_Intro.html)     |
 |   2 | [Data Manipulation]()                                                                |
 |   3 | [Categorical Variables]()                                                            |
