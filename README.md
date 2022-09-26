@@ -5,7 +5,7 @@
 | Day | Slides                                                                               |
 |:---:|:-------------------------------------------------------------------------------------|
 |   1 | [Introduction to Tidyverse](https://filebb.github.io/NHS_intro_DS/01_Intro.html)     |
-|   2 | [Data Manipulation]()                                                                |
+|   2 | [Data Manipulation](https://filebb.github.io/NHS_intro_DS/01_Data_Manipulation.html) |
 |   3 | [Categorical Variables]()                                                            |
 |   4 | [Relational Data]()                                                                  |
 |   5 | [Data Visualisation I]()                                                             |
