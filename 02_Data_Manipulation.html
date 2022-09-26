@@ -749,6 +749,21 @@
 <li><p><code>condition</code> logical vector</p></li>
 <li><p><code>true, false</code> values to use for TRUE and FALSE values of condition</p></li>
 </ul>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><code>var_name = if_else(is.na(var_name), value_if_na, var_name)</code></p>
+<p>is the same as</p>
+<p><code>variable_name = replace_na(variable_name, value_if_na)</code></p>
+</div>
+</div>
+</div>
 </section>
 <section id="more-than-two-choices" class="slide level2">
 <h2>More than two choices</h2>
