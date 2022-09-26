@@ -6,9 +6,9 @@
 |:---:|:-------------------------------------------------------------------------------------|
 |   1 | [Introduction to Tidyverse](https://filebb.github.io/NHS_intro_DS/01_Intro.html)     |
 |   2 | [Data Manipulation](https://filebb.github.io/NHS_intro_DS/02_Data_Manipulation.html) |
-|   3 | [Categorical Variables]()                                                            |
-|   4 | [Relational Data]()                                                                  |
-|   5 | [Data Visualisation I]()                                                             |
+|   3 | [Data Visualisation I]()                                                             |
+|   4 | [Categorical Variables]()                                                            |
+|   5 | [Relational Data]()                                                                  |
 |   6 | [Data Visualisation II]()                                                            |
 |   7 | [Exploratory Data Analysis I]()                                                      |
 |   8 | [Exploratory Data Analysis II]()                                                     |
@@ -39,17 +39,18 @@ Tibbles. Dplyr basics. Pipes.
 
 Dplyr verbs. Numerical summaries. SQL and Dplyr.
 
-### Day 3: Categorical Variables
+### Day 3: Data Visualisation I
+
+Introduction to ggplot2. Creating a ggplot. Aesthetic mappings. Geometric objects.
+
+### Day 4: Categorical Variables
 
 Factors. The package forcats. Modifying factor order. Modifying factors levels.
 
-### Day 4: Relational Data
+### Day 5: Relational Data
 
 Mutating joins. Filtering joins. Set operations.
 
-### Day 5: Data Visualisation I
-
-Introduction to ggplot2. Creating a ggplot. Aesthetic mappings. Geometric objects.
 
 ### Day 6: Data Visualisation II
 
