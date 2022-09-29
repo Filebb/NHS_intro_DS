@@ -403,7 +403,7 @@
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">%&gt;%</span> <span class="co"># data is a tibble</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">col =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">col =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Histogram of data"</span>) <span class="sc">+</span> <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">16</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
@@ -413,15 +413,56 @@
 <h1>Why should we prefer ggplot2?</h1>
 
 </section>
-<section id="we-could-possible-do-this" class="slide level2">
-<h2>We could possible do this</h2>
+<section id="because" class="slide level2">
+<h2>Because</h2>
+<blockquote>
+<p>Unlike most other graphics packages, ggplot2 has an underlying grammar, based on the Grammar of Graphics, that allows you to compose graphs by combining independent components. This makes ggplot2 powerful. Rather than being limited to sets of pre-defined graphics, you can create novel graphics that are tailored to your specific problem.</p>
+</blockquote>
+<p>Hadley Wickham,</p>
+<p><em>ggplot2: Elegant Graphics for Data Analysis</em></p>
+</section>
+<section id="for-example" class="slide level2">
+<h2>For example</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
 
-<img data-src="Img\dicaprio-gfs.png" class="r-stretch"></section></section>
+</div><div class="column" style="width:50%;">
+<p><img data-src="Img\dicaprio-gfs.png"></p>
+</div><div class="column" style="width:25%;">
+
+</div>
+</div>
+
+<aside><div>
+<p>Image Credit <a href="https://github.com/tashapiro/tanya-data-viz/tree/main/dicaprio-gfs">Tanya Shapiro</a></p>
+</div></aside></section></section>
+<section>
 <section id="grammar" class="title-slide slide level1 center">
 <h1>Grammar?</h1>
 
 </section>
-
+<section id="the-grammar-of-graphics-book" class="slide level2">
+<h2>The Grammar of Graphics book</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Theoretical foundation of graphical applications and packages including <strong>ggplot2</strong>.</p></li>
+<li><p>Should you read it? Maybe in the future!</p></li>
+<li><p>To have an intuition (and other things about ggplot2) watch</p>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=h29g21z0a68&amp;t=6231s">ggplot2 workshop part 1</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=0m4yywqNPVY&amp;t=10s">ggplot2 workshop part 2</a></p></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Img\grammar_graphics.jpg"></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section>
 <section>
 <section id="learning-resources" class="title-slide slide level1 center">
 <h1>Learning Resources</h1>
@@ -431,9 +472,11 @@
 <h2>R for Data Science</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p><a href="https://r4ds.had.co.nz/">R for Data Science</a> by Hadley Wickham &amp; Garrett Grolemund</p>
-<p>This is still the best place where to start! <strong>Chapter 3</strong> is dedicated to data visualisation.</p>
-<p>There is also a work-in-progress <a href="https://r4ds.hadley.nz/">2<sup>nd</sup> edition</a> of the book.</p>
+<ul>
+<li><p><a href="https://r4ds.had.co.nz/">R for Data Science</a> by Hadley Wickham &amp; Garrett Grolemund</p></li>
+<li><p>This is still the best place where to start!</p></li>
+<li><p>There is also a work-in-progress <a href="https://r4ds.hadley.nz/">2<sup>nd</sup> edition</a> of the book.</p></li>
+</ul>
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -447,8 +490,10 @@
 <h2>R Graphics Cookbook</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p><a href="https://r-graphics.org/">R Graphics Cookbook</a> (2e) by Winston Chang.</p>
-<p>This is what you should read to fully understand how ggplot2 works.</p>
+<ul>
+<li><p><a href="https://r-graphics.org/">R Graphics Cookbook</a> (2e) by Winston Chang.</p></li>
+<li><p>A lot of recipes to produce plots!</p></li>
+</ul>
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -462,8 +507,10 @@
 <h2>ggplot2 book</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p><a href="https://ggplot2-book.org/">ggplot2</a> (3e) by Hadley Wickham &amp; Danielle Navarro &amp; Thomas Lin Pedersen.</p>
-<p>This is what you should read to fully understand how ggplot2 works.</p>
+<ul>
+<li><p><a href="https://ggplot2-book.org/">ggplot2</a> (3e) by Hadley Wickham &amp; Danielle Navarro &amp; Thomas Lin Pedersen.</p></li>
+<li><p>This is what you should read to fully understand how ggplot2 works.</p></li>
+</ul>
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -475,15 +522,22 @@
 </section>
 <section id="other-links" class="slide level2">
 <h2>Other Links</h2>
+<p>Books:</p>
 <ul>
-<li><p><a href="https://stat545.com/">STAT 545</a> by Jenny Bryan &amp; The STAT 545 TAs</p></li>
-<li><p><a href="https://style.tidyverse.org/">The Tidyverse Style Guide</a> by Hadley Wickham</p></li>
-<li><p><a href="https://rc2e.com/">R Cookbook</a> by James (JD) Long &amp; Paul Teetor</p></li>
+<li><p><a href="https://socviz.co/">Data Visualization - A practical introduction</a> by Kieran Healy</p></li>
+<li><p><a href="https://rkabacoff.github.io/datavis/">Data Visualization with R</a> by Rob Kabacoff</p></li>
 </ul>
+<p>Websites:</p>
+<ul>
+<li><p><a href="https://r-graph-gallery.com/">The R Graph Gallery</a></p></li>
+<li><p><a href="https://www.data-to-viz.com/">From Data to Viz</a></p></li>
+</ul>
+</section></section>
+<section id="ok-but-i-want-to-make-plots" class="title-slide slide level1 center">
+<h1>Ok… But I want to make plots!</h1>
 
-<aside><div>
-<p>A great reference to R base language is <a href="https://rstudio.github.io/r-manuals/r-intro/">An Introduction to R</a>.</p>
-</div></aside></section></section>
+</section>
+
 <section>
 <section id="thank-you" class="title-slide slide level1 center">
 <h1>Thank you!</h1>
