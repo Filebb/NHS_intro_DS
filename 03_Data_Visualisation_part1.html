@@ -546,6 +546,22 @@
 <section id="exercise-1" class="slide level2">
 <h2>Exercise 1</h2>
 <p>Install and load <code>tidyverse</code> and <code>palmerpenguins</code> in your environment!</p>
+<div class="cell">
+
+</div>
+</section>
+<section id="a-plotting-template" class="slide level2">
+<h2>A plotting template</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dataset, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> X, <span class="at">y =</span> X)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_TYPE</span>()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>dataset <span class="sc">%&gt;%</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> X, <span class="at">y =</span> X)) <span class="sc">+</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_TYPE</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section></section>
 <section>
 <section id="scatter-plots" class="title-slide slide level1 center">
@@ -556,72 +572,72 @@
 <h2>Exercise 2</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-3" class="slide level2 smaller">
 <h2>Exercise 3</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>shapes</em> for different islands.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-4" class="slide level2 smaller">
 <h2>Exercise 4</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>shapes</em> for different islands. Increase the size of the points to <code>7</code>. We will keep this size for the rest of the session unless otherwise stated.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-5" class="slide level2 smaller">
 <h2>Exercise 5</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different islands.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-6" class="slide level2 smaller">
 <h2>Exercise 6</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different values of the continuous variable <code>flipper_length_mm</code>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-7" class="slide level2 smaller">
 <h2>Exercise 7</h2>
 <p>Draw a scatter plot using the variable <code>flipper_length_mm</code> for the <em>x-axis</em>, and the variable <code>body_mass_g</code> on the <em>y-axis</em>. Use different <em>colours</em> for different values of the <strong>new</strong> continuous variable obtained from the ratio of <code>bill_length_mm</code> by <code>bill_depth_mm</code>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-8" class="slide level2 smaller">
 <h2>Exercise 8</h2>
 <p>Repeat the previous exercise using the <em>dplyr</em> verb <code>mutate</code> calling the new variable <code>ratio</code>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-9" class="slide level2 smaller">
 <h2>Exercise 9</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different species.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-10" class="slide level2 smaller">
 <h2>Exercise 10</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Highlight the penguins that belong to the “Chinstrap” species.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-11" class="slide level2 smaller">
 <h2>Exercise 11</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different species, and different <em>shapes</em> for different islands.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-12" class="slide level2 smaller">
 <h2>Exercise 12</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.4.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-13" class="slide level2 smaller">
 <h2>Exercise 13</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different penguin sex. Change <em>opacity</em> to 0.4.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-14" class="slide level2 smaller">
 <h2>Exercise 14</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different penguin species. Change <em>opacity</em> to 0.4. Use different facet (panels) for different species.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-15" class="slide level2 smaller">
 <h2>Exercise 15</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different penguin sex. Change <em>opacity</em> to 0.4. Use different facet (panels) for different species.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-16" class="slide level2 smaller">
 <h2>Exercise 16</h2>
 <p>Find the mean of every group identified by species and sex.</p>
@@ -644,7 +660,7 @@
 <h2>Exercise 17</h2>
 <p>Draw a scatter plot using the variable <code>bill_length_mm</code> for the <em>x-axis</em>, and the variable <code>bill_depth_mm</code> on the <em>y-axis</em>. Use different <em>colours</em> for different penguin sex. Change <em>opacity</em> to 0.4. Use different facet (panels) for different species and different sex.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="histograms" class="title-slide slide level1 center">
 <h1>Histograms</h1>
@@ -654,37 +670,37 @@
 <h2>Exercise 18</h2>
 <p>Draw an histogram with the distribution of the continuous variable <code>flipper_length_mm</code>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-19" class="slide level2 smaller">
 <h2>Exercise 19</h2>
 <p>Draw an histogram with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-20" class="slide level2 smaller">
 <h2>Exercise 20</h2>
 <p>Draw an histogram with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.4.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-21" class="slide level2 smaller">
 <h2>Exercise 21</h2>
 <p>Draw an histogram with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.4. Use the option <code>position = "stack"</code>. What changed compared to the previous exercise?</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-22" class="slide level2 smaller">
 <h2>Exercise 22</h2>
 <p>Draw an histogram with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.4. Use the option <code>position = "identity"</code>. What changed compared to the previous exercise?</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-23" class="slide level2 smaller">
 <h2>Exercise 23</h2>
 <p>Draw an histogram with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.4. Use the option <code>position = "identity"</code>. This time use also different colour for the borders of the histogram.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-24" class="slide level2 smaller">
 <h2>Exercise 24</h2>
 <p>Draw an histogram with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.4. Use the option <code>position = "dodge"</code>. What changed compared to the previous exercise?</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="density" class="title-slide slide level1 center">
 <h1>Density</h1>
@@ -694,22 +710,22 @@
 <h2>Exercise 25</h2>
 <p>Draw a density plot with the distribution of the continuous variable <code>flipper_length_mm</code>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-30-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-26" class="slide level2 smaller">
 <h2>Exercise 26</h2>
 <p>Draw a density plot with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-27" class="slide level2 smaller">
 <h2>Exercise 27</h2>
 <p>Draw a density plot with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.6.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-30-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-32-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-28" class="slide level2 smaller">
 <h2>Exercise 28</h2>
 <p>Draw a density plot with the distribution of the continuous variable <code>flipper_length_mm</code>. Use different <em>colours</em> for different species. Change <em>opacity</em> to 0.6. Change also the color of the border of the density plot and change its size.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="axis" class="title-slide slide level1 center">
 <h1>Axis</h1>
@@ -719,17 +735,17 @@
 <h2>Exercise 29</h2>
 <p>Reproduce the following plot. Observe the values on the x-axis.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-32-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-34-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-30" class="slide level2 smaller">
 <h2>Exercise 30</h2>
 <p>Repeat the previous exercise using the function <code>seq</code>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-35-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-31" class="slide level2 smaller">
 <h2>Exercise 31</h2>
 <p>Repeat the previous exercise also changing the values on the <em>y-axis</em>.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-34-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-36-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="labels" class="title-slide slide level1 center">
 <h1>Labels</h1>
@@ -739,7 +755,7 @@
 <h2>Exercise 32</h2>
 <p>Reproduce the following plot.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-35-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-37-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="fixed-ratio" class="title-slide slide level1 center">
 <h1>Fixed Ratio</h1>
@@ -749,7 +765,7 @@
 <h2>Exercise 33</h2>
 <p>Change the ratio between x and y axis. Keep the ration fixed even if you resize the picture.</p>
 
-<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-36-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="03_Data_Visualisation_part1_files/figure-revealjs/unnamed-chunk-38-1.png" width="960" class="r-stretch"></section></section>
 <section>
 <section id="is-data-visualisation-useful" class="title-slide slide level1 center">
 <h1>Is data visualisation useful?</h1>
@@ -758,7 +774,7 @@
 <section id="lets-read-a-new-dataset" class="slide level2">
 <h2>Let’s read a new dataset!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/Filebb/Anscombe/main/anscombe.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/Filebb/Anscombe/main/anscombe.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 44 × 3
        x     y group  
