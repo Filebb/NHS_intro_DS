@@ -8,7 +8,7 @@
 |   2 | [Data Manipulation](https://filebb.github.io/NHS_intro_DS/02_Data_Manipulation.html)           |
 |   3 | [Data Visualisation I](https://filebb.github.io/NHS_intro_DS/03_Data_Visualisation_part1.html) |
 |   4 | [Categorical Variables](https://filebb.github.io/NHS_intro_DS/04_Factors.html)                 |
-|   5 | [Relational Data]()                                                                            |
+|   5 | [Relational Data](https://filebb.github.io/NHS_intro_DS/05_Relational_Data.html)               |
 |   6 | [Data Visualisation II]()                                                                      |
 |   7 | [Exploratory Data Analysis I]()                                                                |
 |   8 | [Exploratory Data Analysis II]()                                                               |
