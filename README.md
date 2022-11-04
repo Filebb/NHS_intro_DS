@@ -10,7 +10,7 @@
 |   4 | [Categorical Variables](https://filebb.github.io/NHS_intro_DS/04_Factors.html)                  |
 |   5 | [Relational Data](https://filebb.github.io/NHS_intro_DS/05_Relational_Data.html)                |
 |   6 | [Data Visualisation II](https://filebb.github.io/NHS_intro_DS/06_Data_Visualisation_part2.html) |
-|   7 | [Exploratory Data Analysis I]()                                                                 |
+|   7 | [Exploratory Data Analysis I](https://filebb.github.io/NHS_intro_DS/07_EDA_part1.html)          |
 |   8 | [Exploratory Data Analysis II]()                                                                |
 
 ## Summary of the course
