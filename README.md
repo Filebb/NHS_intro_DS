@@ -11,7 +11,7 @@
 |   5 | [Relational Data](https://filebb.github.io/NHS_intro_DS/05_Relational_Data.html)                |
 |   6 | [Data Visualisation II](https://filebb.github.io/NHS_intro_DS/06_Data_Visualisation_part2.html) |
 |   7 | [Exploratory Data Analysis I](https://filebb.github.io/NHS_intro_DS/07_EDA_part1.html)          |
-|   8 | [Exploratory Data Analysis II]()                                                                |
+|   8 | [Exploratory Data Analysis II](https://filebb.github.io/NHS_intro_DS/08_EDA_part2.html)         |
 
 ## Summary of the course
 
