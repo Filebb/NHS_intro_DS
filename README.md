@@ -6,9 +6,9 @@
 |:---:|:------------------------------------------------------------------------------------------------|
 |   1 | [Introduction to Tidyverse](https://filebb.github.io/NHS_intro_DS/01_Intro.html)                |
 |   2 | [Data Manipulation](https://filebb.github.io/NHS_intro_DS/02_Data_Manipulation.html)            |
-|   3 | [Data Visualisation I](https://filebb.github.io/NHS_intro_DS/03_Data_Visualisation_part1.html)  |
-|   4 | [Categorical Variables](https://filebb.github.io/NHS_intro_DS/04_Factors.html)                  |
-|   5 | [Relational Data](https://filebb.github.io/NHS_intro_DS/05_Relational_Data.html)                |
+|   3 | [Categorical Variables](https://filebb.github.io/NHS_intro_DS/04_Factors.html)                  |
+|   4 | [Relational Data](https://filebb.github.io/NHS_intro_DS/05_Relational_Data.html)                |
+|   5 | [Data Visualisation I](https://filebb.github.io/NHS_intro_DS/03_Data_Visualisation_part1.html)  |
 |   6 | [Data Visualisation II](https://filebb.github.io/NHS_intro_DS/06_Data_Visualisation_part2.html) |
 |   7 | [Exploratory Data Analysis I](https://filebb.github.io/NHS_intro_DS/07_EDA_part1.html)          |
 |   8 | [Exploratory Data Analysis II](https://filebb.github.io/NHS_intro_DS/08_EDA_part2.html)         |
@@ -39,18 +39,17 @@ Tibbles. Dplyr basics. Pipes.
 
 Dplyr verbs. Numerical summaries. SQL and Dplyr.
 
-### Day 3: Data Visualisation I
-
-Introduction to ggplot2. Creating a ggplot. Aesthetic mappings. Geometric objects.
-
-### Day 4: Categorical Variables
+### Day 3: Categorical Variables
 
 Factors. The package forcats. Modifying factor order. Modifying factors levels.
 
-### Day 5: Relational Data
+### Day 4: Relational Data
 
 Mutating joins. Filtering joins. Set operations.
 
+### Day 5: Data Visualisation I
+
+Introduction to ggplot2. Creating a ggplot. Aesthetic mappings. Geometric objects.
 
 ### Day 6: Data Visualisation II
 
