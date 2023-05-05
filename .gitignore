@@ -4,9 +4,9 @@
 .Ruserdata
 01_Intro.qmd
 02_Data_Manipulation.qmd
-03_Data_Visualisation_part1.qmd
-04_Factors.qmd
+03_Factors.qmd
 05_Relational_Data.qmd
+05_Data_Visualisation_part1.qmd
 06_Data_Visualisation_part2.qmd
 07_EDA_part1.qmd
 08_EDA_part2.qmd

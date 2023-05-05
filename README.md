@@ -6,7 +6,7 @@
 |:---:|:------------------------------------------------------------------------------------------------|
 |   1 | [Introduction to Tidyverse](https://filebb.github.io/NHS_intro_DS/01_Intro.html)                |
 |   2 | [Data Manipulation](https://filebb.github.io/NHS_intro_DS/02_Data_Manipulation.html)            |
-|   3 | [Categorical Variables](https://filebb.github.io/NHS_intro_DS/04_Factors.html)                  |
+|   3 | [Categorical Variables](https://filebb.github.io/NHS_intro_DS/03_Factors.html)                  |
 |   4 | [Relational Data](https://filebb.github.io/NHS_intro_DS/05_Relational_Data.html)                |
 |   5 | [Data Visualisation I](https://filebb.github.io/NHS_intro_DS/03_Data_Visualisation_part1.html)  |
 |   6 | [Data Visualisation II](https://filebb.github.io/NHS_intro_DS/06_Data_Visualisation_part2.html) |
