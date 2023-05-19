@@ -32,8 +32,8 @@ analysis.
 
 ### Day 1: Introduction to Tidyverse
 
-Introduction to R and RStudio. Workflow. Tidy data. The Tidyverse ecosystem. Data import.
-Tibbles. Dplyr basics. Pipes.
+Introduction to R and RStudio. Workflow. Tidy data. The Tidyverse ecosystem.
+Data import. Tibbles. Dplyr basics. Pipes.
 
 ### Day 2: Data Manipulation
 
@@ -49,7 +49,8 @@ Mutating joins. Filtering joins. Set operations.
 
 ### Day 5: Data Visualisation I
 
-Introduction to ggplot2. Creating a ggplot. Aesthetic mappings. Geometric objects.
+Introduction to ggplot2. Creating a ggplot. Aesthetic mappings. Geometric
+objects.
 
 ### Day 6: Data Visualisation II
 
@@ -61,5 +62,5 @@ Visualising distributions. Typical vs unusual values. Missing values.
 
 ### Day 8: Exploratory Data Analysis II
 
-Covariation. A categorical and continuous variable. Two categorical variables. Two continuous
-variables.
+Covariation. A categorical and continuous variable. Two categorical variables.
+Two continuous variables.
